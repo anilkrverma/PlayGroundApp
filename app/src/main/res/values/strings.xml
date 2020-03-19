@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">PlayGround</string>
+    <string name="main_background">Main Background</string>
+    <string name="main_logo">Main Logo</string>
+    <string name="my_play_ground">PLAY GROUND</string>
+    <string name="weekend_gataway">Where the fun begins</string>
+    <string name="find_a_group_to_play">Find a group to play</string>
+    <string name="get_started">GET STARTED</string>
 </resources>
