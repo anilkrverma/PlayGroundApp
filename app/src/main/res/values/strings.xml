@@ -6,4 +6,10 @@
     <string name="weekend_gataway">Where the fun begins</string>
     <string name="find_a_group_to_play">Find a group to play</string>
     <string name="get_started">GET STARTED</string>
+    <string name="league_image">LeagueImage</string>
+    <string name="select_the_group">Select the group</string>
+    <string name="men">MEN</string>
+    <string name="WOMEN">WOMEN</string>
+    <string name="ALL">ALL</string>
+    <string name="next">NEXT</string>
 </resources>
