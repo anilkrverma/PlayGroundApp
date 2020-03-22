@@ -17,4 +17,5 @@
     <string name="beginner">BEGINNER</string>
     <string name="expert">EXPERT</string>
     <string name="finish">FINISH</string>
+    <string name="final_image_background">final image background</string>
 </resources>

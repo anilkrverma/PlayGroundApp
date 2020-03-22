@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".Controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -66,36 +66,39 @@
         app:layout_constraintVertical_bias="0.171">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/mensBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_toggle"
+            android:onClick="mensBtnClicked"
             android:text="@string/men"
             android:textColor="#FFFFFF"
             android:textOff="@string/men"
             android:textOn="@string/men" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_toggle"
+            android:onClick="womensBtnClicked"
             android:text="@string/WOMEN"
             android:textColor="#FFFFFF"
             android:textOff="@string/WOMEN"
             android:textOn="@string/WOMEN" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/allBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_toggle"
+            android:onClick="allBtnClicked"
             android:text="@string/ALL"
             android:textColor="#FFFFFF"
             android:textOff="@string/ALL"
