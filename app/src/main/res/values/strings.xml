@@ -12,4 +12,9 @@
     <string name="WOMEN">WOMEN</string>
     <string name="ALL">ALL</string>
     <string name="next">NEXT</string>
+    <string name="skill_background">skillBackground</string>
+    <string name="select_your_level">Select Your level?</string>
+    <string name="beginner">BEGINNER</string>
+    <string name="expert">EXPERT</string>
+    <string name="finish">FINISH</string>
 </resources>

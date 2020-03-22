@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="@+id/logo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -103,10 +103,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/playground_button"
+        android:onClick="nextButtonClicked"
         android:text="@string/next"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
