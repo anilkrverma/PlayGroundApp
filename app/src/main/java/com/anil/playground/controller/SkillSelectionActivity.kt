@@ -1,15 +1,12 @@
-package com.anil.playground.Controller
+package com.anil.playground.controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.webkit.WebView
 import android.widget.Toast
-import com.anil.playground.Model.Player
-import com.anil.playground.Utils.EXTRA_GROUP
+import com.anil.playground.model.Player
 import com.anil.playground.R
-import com.anil.playground.Utils.EXTRA_LEVEL
-import com.anil.playground.Utils.EXTRA_PLAYER
+import com.anil.playground.utils.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_skill_selection.*
 
 class SkillSelectionActivity : BaseActivity() {

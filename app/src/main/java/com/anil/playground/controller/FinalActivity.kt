@@ -1,12 +1,10 @@
-package com.anil.playground.Controller
+package com.anil.playground.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.anil.playground.Model.Player
+import com.anil.playground.model.Player
 import com.anil.playground.R
-import com.anil.playground.Utils.EXTRA_GROUP
-import com.anil.playground.Utils.EXTRA_LEVEL
-import com.anil.playground.Utils.EXTRA_PLAYER
+import com.anil.playground.utils.EXTRA_PLAYER
 import kotlinx.android.synthetic.main.activity_final.*
 
 class FinalActivity : AppCompatActivity() {

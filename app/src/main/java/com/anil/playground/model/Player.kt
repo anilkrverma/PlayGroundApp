@@ -1,4 +1,4 @@
-package com.anil.playground.Model
+package com.anil.playground.model
 
 import android.os.Parcel
 import android.os.Parcelable

@@ -1,4 +1,4 @@
-package com.anil.playground.Controller
+package com.anil.playground.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
