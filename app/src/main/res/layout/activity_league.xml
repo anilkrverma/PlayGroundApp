@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="410dp"
-        android:layout_height="737dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:contentDescription="@string/league_image"
         android:scaleType="centerCrop"
         android:src="@drawable/desiredleaguebg"
@@ -20,105 +20,101 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="644dp"
-        android:contentDescription="@string/main_logo"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/swooshlogo" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="@string/select_the_group"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:fontFamily="@font/montserrat_bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/logo" />
-
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.171">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textView3"
+        android:contentDescription="@string/main_logo"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/swooshlogo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/select_the_group"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:fontFamily="@font/montserrat_bold"
+        android:layout_centerVertical="true"
+        android:layout_above="@id/toogleLayout"
+        android:layout_margin="50dp"
+        android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/toogleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true" android:background="@android:color/holo_blue_bright">
         <ToggleButton
             android:id="@+id/mensBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@drawable/button_toggle"
             android:onClick="mensBtnClicked"
             android:text="@string/men"
             android:textColor="#FFFFFF"
             android:textOff="@string/men"
-            android:textOn="@string/men" />
+            android:textOn="@string/men"
+            android:layout_margin="10dp"/>
 
         <ToggleButton
             android:id="@+id/womensBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@drawable/button_toggle"
             android:onClick="womensBtnClicked"
             android:text="@string/WOMEN"
             android:textColor="#FFFFFF"
             android:textOff="@string/WOMEN"
-            android:textOn="@string/WOMEN" />
+            android:textOn="@string/WOMEN"
+            android:layout_margin="10dp"/>/>
 
         <ToggleButton
             android:id="@+id/allBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@drawable/button_toggle"
             android:onClick="allBtnClicked"
             android:text="@string/ALL"
             android:textColor="#FFFFFF"
             android:textOff="@string/ALL"
-            android:textOn="@string/ALL" />
-    </LinearLayout>
+            android:textOn="@string/ALL"
+            android:layout_margin="10dp"/>/>
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/nextButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/playground_button"
-        android:onClick="nextButtonClicked"
-        android:text="@string/next"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.944" />
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/playground_button"
+            android:onClick="nextButtonClicked"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
